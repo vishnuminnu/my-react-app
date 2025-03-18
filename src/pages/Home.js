@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import "./Home.css"
 import star from "./images/star.png"
-import circle from "./images/circle.png"
+
 
 function Home() {
   const slides = [

@@ -29,9 +29,9 @@ function Footer() {
           <p>Phone: +91 123-456-7890</p>
           <p>Address: 123 Feed Lane, Hyderabad, India</p>
           <div className="social-icons">
-            <a href="https://linkedin.com" target="_blank" className="social-link">L</a>
-            <a href="https://twitter.com" target="_blank" className="social-link">T</a>
-            <a href="https://instagram.com" target="_blank" className="social-link">I</a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-link">L</a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="social-link">T</a>
+            <a href="https://instagram.com" target="_blank"rel="noreferrer" className="social-link">I</a>
           </div>
         </div>
       </div>
