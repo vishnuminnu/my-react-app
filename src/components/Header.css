@@ -1,0 +1,60 @@
+/* Replace existing header styles in App.css */
+
+/* Header Styles */
+.navbar {
+    background: #2E7D32; /* Green */
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .navbar-brand.logo {
+    color: #FFFFFF; /* White */
+    font-size: 28px;
+    font-weight: 700;
+    transition: transform 0.3s;
+  }
+  
+  .navbar-brand.logo:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .nav-link {
+    color: #FFD54F !important; /* Yellow */
+    font-weight: 700;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #FFFFFF !important; /* White on hover */
+  }
+  
+  .dropdown-toggle {
+    color: #FFD54F !important; /* Yellow */
+  }
+  
+  .dropdown-toggle:hover {
+    color: #FFFFFF !important; /* White on hover */
+  }
+  
+  .dropdown-menu {
+    background: #2E7D32; /* Green */
+    border: 1px solid #FFD54F; /* Yellow border */
+  }
+  
+  .dropdown-item {
+    color: #FFD54F; /* Yellow */
+  }
+  
+  .dropdown-item:hover {
+    color: #FFFFFF; /* White */
+    background: rgba(255, 213, 79, 0.2); /* Light Yellow hover */
+  }
+  
+  /* Toggler Icon Customization */
+  .navbar-toggler {
+    border-color: #FFD54F; /* Yellow border */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FFD54F' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Yellow bars */
+  }

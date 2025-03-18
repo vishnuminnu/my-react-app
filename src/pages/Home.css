@@ -1,0 +1,208 @@
+/* Replace existing carousel styles in App.css */
+
+
+  
+  /* Carousel Container */
+  .carousel.slide {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #feedCarousel{
+    margin: 20px;
+    border: 1px solid #FFD54F;
+    border-radius: 10px;
+  }
+  
+  .carousel-fade .carousel-item {
+    transition: opacity 0.7s ease-in-out; /* Smooth fade transition */
+  }
+  
+  .carousel-image {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item.active .carousel-image {
+    transform: scale(1.05); /* Slight zoom when active */
+  }
+  
+  /* Gradient Overlay */
+  .carousel-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(46, 125, 50, 0.4), rgba(33, 33, 33, 0.6)); /* Green to Dark Gray */
+  }
+  
+  /* Captions */
+  .carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    text-align: left;
+    background: rgba(46, 125, 50 ,0.5);
+   
+    padding: 0;
+  }
+  
+  .carousel-caption h5 {
+    color: #FFFFFF; /* White */
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-caption p {
+    color: #FFD54F; /* Yellow */
+    font-size: 18px;
+  }
+  
+  /* Slide-in Animation */
+  .animate-slide-in {
+    animation: slideIn 0.8s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Indicators */
+  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #FFD54F; /* Yellow */
+    border: none;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .carousel-indicators .active {
+    background: #FFFFFF; /* White when active */
+    transform: scale(1.2);
+  }
+  
+  .carousel-indicators [data-bs-target]:hover {
+    transform: scale(1.2);
+    background: #FFFFFF;
+  }
+  
+  /* Controls */
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #2E7D32; /* Green */
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    opacity: 1;
+  }
+  
+  /* Static Content */
+  .home-content {
+    padding: 40px;
+    text-align: center;
+    color: #ebe3e3;
+  }
+  
+  .home-content h2 {
+     /* Dark Gray */
+    margin-bottom: 20px;
+  }
+  
+  .home-content p {
+    /* Dark Gray */
+    max-width: 600px;
+    margin: 0 auto 10px;
+  }
+  
+  .cta {
+    background: #FFD54F; /* Yellow */
+    color: #212121; /* Dark Gray */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background 0.3s;
+    
+  }
+  
+  .cta:hover {
+    background: #2E7D32; /* Green */
+    color: #FFFFFF; /* White */
+  }
+
+
+
+/*cards*/
+/* Add to existing App.css */
+
+.carousel-inner .card {
+    flex: 1; /* Equal width for cards */
+    margin: 0 5px; /* Space between cards */
+    border: 1px solid #2E7D32; /* Green border */
+    background: #FFFFFF; /* White background */
+    max-width: 32%; /* Ensure 3 cards fit */
+  }
+  
+  .card-img-top {
+    height: 400px; /* Fixed height for images */
+    object-fit: cover;
+   
+  }
+  
+  .card-body {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-title {
+    color: #2E7D32; /* Green */
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .card-text {
+    color: #212121; /* Dark Gray */
+    font-size: 12px;
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #2E7D32; /* Green */
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    opacity: 1;
+  }
+
+
+
+
+
+  
